@@ -1,3 +1,9 @@
 {% extends 'base/base.html' %}
-
+{% load static %}
 {% block title %} Home {% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <img src="{% static 'img/fundo function.png' %}" class="w-full">
+    </div>
+{% endblock %}
