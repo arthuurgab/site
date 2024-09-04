@@ -1,0 +1,59 @@
+{% load static %}
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"  rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- Incluindo jQuery da CDN do jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ou Incluindo jQuery da CDN do Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <title>{% block title %}  {% endblock %}</title>
+</head>
+<body>
+    <nav class="bg-white dark:bg-gray-900">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+            <a href="/" class="flex items-center rtl:space-x-reverse">
+                <img src="{% static 'img/logo-removebg.png' %}" class="h-20" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><span class="text-blue-700 font-bold">ART</span>PythonCodes</span>
+            </a>
+            <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                <a href="tel:5541251234" class="text-sm text-gray-500 dark:text-white hover:underline">(555) 412-1234</a>
+                <a href="#" class="text-sm text-blue-700 dark:text-blue-700 hover:underline"><i class='bx bxs-envelope text-2xl'></i></a>
+                <a href="#" class="text-sm text-blue-700 dark:text-blue-700 hover:underline"><i class='bx bxl-linkedin text-2xl'></i></a>
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-gray-50 dark:bg-gray-700">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto">
+            <div class="flex items-center">
+                <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                    <li>
+                        <a href="#" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Inicial</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Solicitar um Projeto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Meu GitHub</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Sobre Mim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
